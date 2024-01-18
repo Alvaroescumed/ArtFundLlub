@@ -53,9 +53,15 @@ nav div{
     justify-content: center;
 
 }
+
+.imagenes_destacadas{
+    display: flex;
+    justify-content: center;
+}
 .imagenes_destacadas picture img{
-    width: 576px;
+    width: 200px;
     height: 380px;
+    flex-basis: 50%;
 }
 
 .eslogan{
@@ -204,12 +210,13 @@ footer{
     fill:#FFF;
     width: 60px;
     margin: 15px;
+    margin-left:0;
 
 }
 
 .cookies{
     color: #FFF;
-    margin-right: 10px;
+    margin-right: 20px;
     position: relative;
 }
 
