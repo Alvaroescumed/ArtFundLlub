@@ -18,21 +18,25 @@ a{
 header{
     display: flex;
     height: 80px;
-    padding: 2%;
     border-bottom: 2px solid #A188DB;
     background-color: #FFF;
     margin: 0%;
-    justify-content: space-between;
+    justify-content: space-between ;
     align-items: center;
 }
 
-nav{
+.navegador{
     display: flex;
     justify-content: space-between;
+    padding: 2px;
+    margin: 2px;
+    align-items: center;
+    & div{
+        margin: 10px;
+    }
 }
-nav div{
-    margin: 20px;
-}
+
+
 
 .buscador input{
     border-radius: 25px;
@@ -43,10 +47,17 @@ nav div{
     padding: 5%;
 }
 
-.logo a svg{
-    height: 25px;
-    fill: #A188DB; /* color para el svg */
+#logo_header{
+    & a{
+        margin-right:  123 px;
+        & svg{
+            height: 25px;
+            fill: #A188DB; /* color para el svg */
+            
+            }
+    }
 }
+
 
 .bloque_principal{
     display: flex;
