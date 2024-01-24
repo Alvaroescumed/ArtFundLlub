@@ -8,22 +8,7 @@
 </head>
 <body>
     <header>
-       <div class="navegador">
-                <div>
-                    <details>
-                        <summary>Descubrir</summary>
-                        <ul>
-                            <li><a href="Arte.html">Arte</a></li>
-                            <li><a href="TecnologiaInovacion.html">Tecnología e Inovación</a></li>
-                            <li><a href="Audiovisual.html">Audiovisual</a></li>
-                        </ul>
-                    </details>
-                </div>
-                <div>
-                    <a href="CrearProyecto.html">Crear</a>
-                </div>
-        </div>
-        <div id="logo_header">
+        <div class="logo_header">
             <a href="index.html"> <!--Al clicar el logo este nos redirige al inicio-->
                 <svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 187.94 21.71" >
                     <path d="M13.34.86A1.13,1.13,0,0,0,12.24,0H5.4L0,21.71H3.68c2.9,0,5.16.16,4-7.3L7.64,14H8.9l1.72,6.9a1,1,0,0,0,1,.77h5.62a1,1,0,0,0,1-1.27ZM7.45,12.8C6.67,7.68,6.48,6.45,6,2.55c.46,1.74.35,1.29.74,2.81L8.59,12.8Z"/>
@@ -38,24 +23,40 @@
                 </svg>
             </a>
         </div>
-        <div class="navegador">
+        <section class="navegador-left">
+            <div>
+                <details>
+                    <summary>Descubrir</summary>
+                    <ul>
+                        <li><a href="Arte.html">Arte</a></li>
+                        <li><a href="TecnologiaInovacion.html">Tecnología e Inovación</a></li>
+                        <li><a href="Audiovisual.html">Audiovisual</a></li>
+                    </ul>
+                </details>
+            </div>
+            <div>
+                <a href="CrearProyecto.html">Crear</a>
+            </div>
+        </section>
+        <section class="navegador-right">
             <div class="buscador">
                 <input type="text" placeholder="Buscar...">
             </div>
             <div>
                 <a href="inicionsesion.html">Login</a>
             </div>
-        </div>
+        </section>
     </header>
+
     <div class="bloque_principal">
         <div class="imagenes_destacadas"> <!--Futuro carrusel de imagenes-->
             <picture>
                 <img src="imágenes/proyecto-1.jpeg" alt="Proyecto-comic">
-                <img src="imágenes/proyecto-2.jpeg" alt="Proyecto-tecnológico">
-                <img src="imágenes/proyecto-3.jpeg" alt="proyecto-inovación">
+               <!--  <img src="imágenes/proyecto-2.jpeg" alt="Proyecto-tecnológico">
+                <img src="imágenes/proyecto-3.jpeg" alt="proyecto-inovación"> -->
             </picture>
 
-            <div class="menu-carrusel">
+   <!--          <div class="menu-carrusel">
                 <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
                     <circle cx="13.5" cy="13.5" r="13.5" fill="black"/>
                 </svg>
@@ -65,20 +66,23 @@
                 <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
                     <circle cx="13.5" cy="13.5" r="13.5" fill="black"/>
                 </svg>
-            </div>
+            </div> -->
         </div>
+        <div class="linea-divisoria"></div>
         <div class="eslogan">
             <h1>Contribuye a el desarrollo,</h1>
             <h2>EVOLUCIONA</h2>
         </div>
     </div>
     <div class="cuadro_explicativo">
-        <h1>¿Cómo funciona?</h1>
-        <p>ArtFundLub es una plataforma de micromecenazgo que une arte, tecnología y producción audiovisual,
-            que permite a artistas obtener fondos para sus proyectos creativos. Funciona mediante la presentación de propuestas por parte de los creadores, quienes buscan financiación a través de donaciones de la comunidad interesada en apoyar proyectos innovadores. 
-             Los donantes pueden contribuir con pequeñas cantidades de dinero para respaldar proyectos específicos y, a cambio, recibir recompensas o acceso exclusivo al arte producido. 
-             La plataforma actúa como un puente entre los artistas y el público, facilitando la conexión directa entre aquellos que buscan apoyo financiero y aquellos que desean respaldar iniciativas artísticas y tecnológicas.
-        </p>
+        <div>
+            <h1>¿Cómo funciona?</h1>
+            <p>ArtFundLub es una plataforma de micromecenazgo que une arte, tecnología y producción audiovisual,
+                que permite a artistas obtener fondos para sus proyectos creativos. Funciona mediante la presentación de propuestas por parte de los creadores, quienes buscan financiación a través de donaciones de la comunidad interesada en apoyar proyectos innovadores. 
+                Los donantes pueden contribuir con pequeñas cantidades de dinero para respaldar proyectos específicos y, a cambio, recibir recompensas o acceso exclusivo al arte producido. 
+                La plataforma actúa como un puente entre los artistas y el público, facilitando la conexión directa entre aquellos que buscan apoyo financiero y aquellos que desean respaldar iniciativas artísticas y tecnológicas.
+            </p>
+        </div>
     </div>
     <section class="favoritos">
         <div class="titulo">
@@ -86,8 +90,10 @@
         </div>
         <div class="prfavoritos">
             <div class="proyectos">
-                <a href="Proyecto.html">
-                    <img src="imágenes/juego-mesa.jpeg" alt="imagen-nombreproyecto" class="imagen-proyecto">
+                <a class="int-proyecto" href="Proyecto.html">
+                    <div class="imagen-pro">
+                        <img src="imágenes/juego-mesa.jpeg" alt="imagen-nombreproyecto" class="imagen-proyecto">
+                    </div>
                     <div class="barra_progreso"><div class="indicador"></div></div>
                     <div class="texto">
                         <h3>Las Catacumbas del Abismo</h3>
@@ -97,8 +103,11 @@
                 </a>
             </div>
             <div class="proyectos">
-                <a href="Proyecto.html">
+                <a class="int-proyecto" href="Proyecto.html">
+                    <div class="imagen-pro">
                     <img src="imágenes/monopatin-futurista.jpeg" alt="imagen-nombreproyecto" class="imagen-proyecto">
+                    </div>
+                    <div class="barra_progreso"><div class="indicador"></div></div>
                     <div class="texto">
                         <h3>SkyGlide AeroJet</h3>
                         <p class="Descripción">El SkyGlide AeroJet redefine la movilidad urbana con su monopatín volador futurista. Equipado con tecnología de propulsión avanzada, diseño aerodinámico y control intuitivo, ofrece una experiencia de desplazamiento única en el cielo urbano del mañana.</p>
@@ -107,8 +116,11 @@
                 </a>
             </div>
             <div class="proyectos">
-                <a href="Pro">
+                <a class="int-proyecto" href="Pro">
+                    <div class="imagen-pro">
                     <img src="imágenes/pelicula.jpeg" alt="imagen-nombreproyecto" class="imagen-proyecto">
+                    </div>
+                    <div class="barra_progreso"><div class="indicador"></div></div>
                     <div class="texto">
                         <h3>Entre Silencios Urbanos</h3>
                         <p class="Descripción">Explora la melancolía y la soledad de la generación millennial durante el confinamiento por COVID-19. A través de relatos íntimos, la película revela conexiones inesperadas y reflexiona sobre la búsqueda de significado en un mundo virtual.</p>
