@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,700;0,800;1,100&display=swap');
 
 *{
     box-sizing: border-box;
@@ -92,12 +92,13 @@ header{
     padding: 25px;;
     position: 1;
     & picture{
-        width: 480px;
+        width: 100%;
         height: 380px;
         overflow: hidden; /* establecemos un marco para que la imgen no se deforme en caso de que no corresponda a la proporcion de la pagina */
         & img{
-            width: 120%;
+            width: 100%;
             align-items: center;
+            transform: translateY(-10%);
         }
     }
 }
@@ -454,4 +455,146 @@ input:focus{
 
 
 }
+
+.condiciones{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 60px;
+    margin: 5%;
+
+    & h1{
+        color: #A188DB;
+        font-weight: 800;
+    }
+    & h5{
+        color: #505050;
+        text-decoration: underline #505050;
+    }
+}
+
+.lista_condiciones{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    & h3{
+        color: #352f43;
+    }
+    & h6{
+        align-self: flex-end;
+        font-weight: 300;
+        font-size: 15px;
+        text-decoration: underline;
+    }
+}
+
+@media screen and (max-width: 810px) {
+
+    *{
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    .navegador-left,.navegador-right, .logo_header {
+      display: none; /* Oculta la sección de navegación normal */
+    }
+
+    .bloque_principal{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .imagenes_destacadas{
+        flex-basis: 0%;
+        padding: 0px;
+        margin-top: 50px;
+        margin-bottom: 10px;
+        & picture{
+            width: auto;
+            height: max-content;
+        }
+    }
+    .linea-divisoria{
+       height: 3px;
+       width: 80vw;
+       align-self: center;
+       margin-top: 10px;
+       margin-bottom: 10px;
+       background: linear-gradient(90deg, rgba(161,136,219,1) 0%, rgb(127, 102, 186) 100%);
+
+    }
+    .eslogan{
+        width: 80vw;
+        justify-content: center;
+        margin: 0px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        & h1{
+            font-size:auto;
+        }
+        & h2{
+            font-size: auto;
+        }
+    }
+
+    .cuadro_explicativo div{
+        & h1{
+            font-size: 200%;
+        }
+        & p{
+            font-size: 100%;
+        }
+
+    }
+
+    .favoritos{
+        align-items: center;
+    }
+
+    .proyectos{
+        width: 80%;
+        height: 100%;
+    }
+
+    .titulo{
+        font-size:100%;
+    }
+    .prfavoritos, .container-proyectos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .redes_sociales{
+        justify-content: center;
+
+        & h3{
+            align-self: flex-start;
+            font-size: 100%;
+        }
+    }
+
+    .logo_footer{
+        width: 50%;
+    }
+
+    .titulo-portada{
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        & h1{
+            font-size: 200%;
+        }
+        & h2{
+            font-size: 200%;
+            padding: 0%;
+        }
+    }
+
+  }
 
