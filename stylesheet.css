@@ -25,6 +25,11 @@ header{
     background-color: #FFF;
 }
 
+.nav{
+    display: none;
+}
+
+
 .navegador-left{
     display: flex;
     order: 1;
@@ -604,17 +609,39 @@ video{
         margin-right: 0%;
     }
     header{
-      flex-direction: column;
-      justify-content: center;
-      height: auto;
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+        justify-content: center;
     }
     .logo_header{
+        position: relative;
         order: 1;
+        flex-direction: row;
+        padding: 20px;
+        width: 100%;
+        flex-basis: 100%;
+
     }
 
-    .navegador-left, .navegador-right{
+
+    .navegador-left , .navegador-right{
+        display: none;
+    }
+
+    .buscador input{
+        display: none;
+    }
+
+    .nav{
+        display: flex;
+        flex-direction: row;
         order: 2;
-        flex-basis: 0%;
+        justify-content: center;
+        align-content: center;
+        & div{
+            padding: 15px;
+        }
     }
 
     .bloque_principal{
