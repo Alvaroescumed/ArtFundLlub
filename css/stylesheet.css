@@ -216,9 +216,9 @@ header{
     padding-left: 20px;
     & div{
         height: 100%;
-        width: 80%;
+       /*  width: 100%; */
         background-color: rgba(19, 172, 5, 0.50);
-        background: linear-gradient(90deg, rgb(19, 172, 5) 0%, rgba(255, 255, 255, 0) 100%);
+       /*  background: linear-gradient(90deg, rgb(19, 172, 5) 0%, rgba(255, 255, 255, 0) 100%); */
     }
 }
 
