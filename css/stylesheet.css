@@ -1,13 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,700;0,800;1,100&display=swap');
 
 *{
+    font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-
-body{
-    font-family: 'Montserrat', sans-serif;
 }
 
 a{
@@ -90,22 +87,59 @@ header{
 }
 
 .imagenes_destacadas{
-    display: flex;
-    justify-content: center;
     flex-basis: 50%;
-    margin: 80px;
+    width: 100%;
+}
+
+.container{
+    align-items: center;
+    display: flex;
+    height: 380px;
+    margin: 0 auto;
     padding: 25px;
-    position: 1;
-    & picture{
-        width: 100%;
-        height: 380px;
-        overflow: hidden; /* establecemos un marco para que la imgen no se deforme en caso de que no corresponda a la proporcion de la pagina */
-        & img{
-            width: 100%;
-            align-items: center;
-            transform: translateY(-10%);
-        }
-    }
+    position: relative;
+}
+
+.imagen{
+    width: 200px;
+    opacity: 0;
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+    z-index: 0;
+}
+
+.imagen-1{
+    left: 15%;
+    height: 200px;
+    opacity: 0.5;
+    transform: translateX(-20%);
+}
+
+.imagen-2{
+    left: 25%;
+    height: auto;
+    width: 325px;
+    opacity: 1;
+    z-index: 1;
+}
+
+.imagen-3{
+    height: 200px;
+    right: 15%;
+    opacity: 0.5;
+    transform: translateX(-20%);
+}
+
+.controles {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  padding: 20px;
+}
+
+button {
+    background: transparent;
+
 }
 
 .linea-divisoria{
@@ -123,7 +157,7 @@ header{
     text-align: left;
     justify-content: center;
     flex-basis: 50%;
-    margin: 80px;
+    margin: 0;
     position: 3;
     padding: 25px;
     & h2{
@@ -210,16 +244,15 @@ header{
     }
 }
 .barra_progreso{
-    background-color:#FFF;
-    height: 5px;
-    width: 100%;
-    padding-left: 20px;
-    & div{
-        height: 100%;
-       /*  width: 100%; */
-        background-color: rgba(19, 172, 5, 0.50);
-       /*  background: linear-gradient(90deg, rgb(19, 172, 5) 0%, rgba(255, 255, 255, 0) 100%); */
-    }
+    background-color:#d8d8d8;
+    height: 8px;
+    width: 90%;
+    box-shadow: 0 0 2px #646464;
+}
+
+#indicador{
+    height: 100%;
+    background-color: rgba(109, 233, 98, 0.5);
 }
 
 

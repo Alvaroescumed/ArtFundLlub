@@ -69,23 +69,17 @@
 
     <div class="bloque_principal">
         <div class="imagenes_destacadas"> <!--Futuro carrusel de imagenes-->
-            <picture>
-                <img src="imágenes/proyecto-1.jpeg" alt="Proyecto-comic">
-               <!--  <img src="imágenes/proyecto-2.jpeg" alt="Proyecto-tecnológico">
-                <img src="imágenes/proyecto-3.jpeg" alt="proyecto-inovación"> -->
-            </picture>
+            <div class="container">
+                <img src="imágenes/proyecto-1.jpeg" class="imagen imagen-1" alt="Proyecto-comic" data-index="1">
+                <img src="imágenes/proyecto-2.jpeg" class="imagen imagen-2" alt="Proyecto-tecnológico" data-index="2">
+                <img src="imágenes/proyecto-3.jpeg" class="imagen imagen-3" alt="proyecto-inovación" data-index="3">
+            </div>
 
-   <!--          <div class="menu-carrusel">
-                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
-                    <circle cx="13.5" cy="13.5" r="13.5" fill="black"/>
-                </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
-                    <circle cx="13.5" cy="13.5" r="13.5" fill="black"/>
-                 </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
-                    <circle cx="13.5" cy="13.5" r="13.5" fill="black"/>
-                </svg>
-            </div> -->
+            <div class="controles">
+                <button class="btn-prev"> PREV </button>
+                <button class="btn-next"> NEXT </button>
+            </div>
+
         </div>
         <div class="linea-divisoria"></div>
         <div class="eslogan">
@@ -196,5 +190,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="JS/carrousel.js"></script>
 </body>
 </html>
