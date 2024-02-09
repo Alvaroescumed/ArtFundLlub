@@ -70,22 +70,45 @@
         <div class="mensaje">
         <h2>Crear Proyecto</h2>
         </div>
-        <form class="formulario" id="publicar-proyecto" action="#" method="post">
-            <label>Nombre del Proyecto: </label><input type="text" placeholder="Nombre del Proyecto" required>
-            <label>Descripcion del Proyecto: </label><textarea maxlength="140" name="Descripcion del Proyecto" placeholder="Breve descripcion del proyecto..." required></textarea>
-            <label>Categoría</label><select required>
-                <option id="select-placeholder" aria-selected="false">Seleccionar</option>
-                <option aria-selected="true">Arte</option>
-                <option aria-selected="true">Tecnologia e Inovacion</option>
-                <option aria-selected="true">Audiovisual</option>
-            </select>
-            <label>Autor/a</label><input type="text" placeholder="Nombre del Autor/a" required>
-            <label>Fecha Limite</label><input id="fecha" type="date" required>
-            <label>Meta Economica: </label><input type="number" placeholder="Ej: 10.500€" required>
-            <label>Banner Proyecto: </label><input id="banner"type="file" name="banner" required>
+        <form class="formulario" id="publicar-proyecto"  action="#" method="post" autocomplete="off">
+            <div class="validator">
+                <label for="nombre">Nombre del Proyecto: </label>
+                <input type="text" id="nombre" placeholder="Nombre del Proyecto" autocomplete="off">
+            </div>
+            <div class="validator">
+                <label for="descripcion">Descripcion del Proyecto: </label>
+                <textarea id="descripcion" maxlength="140" name="Descripcion del Proyecto" placeholder="Breve descripcion del proyecto..."autocomplete="off"></textarea>
+            </div>
+            <div class="validator">
+                <label for="categoria">Categoría</label>
+                <select id="categoria" autocomplete="off">
+                    <option aria-selected="false">Seleccionar</option>
+                    <option aria-selected="true">Arte</option>
+                    <option aria-selected="true">Tecnologia e Inovacion</option>
+                    <option aria-selected="true">Audiovisual</option>
+                </select>
+            </div>
+            <div class="validator">
+                <label for="autor">Autor/a</label>
+                <input id="autor" type="text" placeholder="Nombre del Autor/a" autocomplete="off">
+            </div>
+            <div class="validator">
+                <label for="date">Fecha Limite</label>
+                <input id="fecha" type="date" autocomplete="off">
+            </div>
+            <div class="validator">
+                <label for="meta">Meta Economica: </label>
+                <input id="meta" type="number" placeholder="Ej: 10.500" autocomplete="off">
+            </div>
             <button class="boton" type="submit">CREAR</button>
         </form>
     </div>
+    <div class="modal">
+        <span>&times;</span>
+        <h1>Listo!</h1>
+        <p>Tu proyecto ha sido publicado</p>
+    </div>
+
     <footer>
         <div class="cookies">
             <div class="logo_footer">
@@ -133,5 +156,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="JS/formularios.js"></script>
 </body>
 </html>

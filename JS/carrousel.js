@@ -50,7 +50,7 @@ class Carousel {
       this.setPosicion(botonNext);
     });
   } else {
-    console.error("Error: No se encontraron los botones btn-prev o btn-next en el contenedor");
+    console.error("Error");
   }
 }
 
