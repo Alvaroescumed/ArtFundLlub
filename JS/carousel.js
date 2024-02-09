@@ -2,7 +2,7 @@ const contenedorImagenes = document.querySelector('.container');
 const contenedorControles = document.querySelector('.controles');
 const imagenes  = document.querySelectorAll('.imagen')
 
-class Carousel {
+class Carousel { //creamos una clase carousel que contiene el constructor y las funciones que necesita para funcionar
 
   constructor (container, imagenes){
     this.carouselContainer = container;
@@ -34,7 +34,7 @@ class Carousel {
     this.updateImagenes();
   }
 
-  useControles(){
+  useControles(){ //interacciones con los botones para mover el carousel
 
   const botonNext= document.querySelector('.btn-next');
   const botonPrev= document.querySelector('.btn-prev');
@@ -56,5 +56,5 @@ class Carousel {
 
 }
 
-const carouselIndex = new Carousel(contenedorImagenes, imagenes);
-carouselIndex.useControles();
+const carouselIndex = new Carousel(contenedorImagenes, imagenes); //creamos un carousel con los elemento del idex.html
+carouselIndex.useControles(); //llamamos a la funcion de los controles para que funcione en la web

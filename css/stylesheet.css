@@ -89,6 +89,7 @@ header{
 .imagenes_destacadas{
     flex-basis: 50%;
     width: 100%;
+    left: 10px;
 }
 
 .container{
@@ -135,11 +136,6 @@ header{
   justify-content: space-around;
   align-content: center;
   padding: 20px;
-}
-
-button {
-    background: transparent;
-
 }
 
 .linea-divisoria{
@@ -396,6 +392,7 @@ footer{
     }
 }
 
+
 .formulario{
     display: flex;
     flex-direction: column;
@@ -426,19 +423,39 @@ footer{
 }
 .boton:hover{
     cursor: pointer;
-}
-
-.boton:focus{
-    animation: 0.3s;
     background-color:rgb(80, 56, 136);
 }
 
+.controls{
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    font-size: 80px;
+    color: #352f43;
+    left: auto;
+    top: 25%;
+    left: 5%;
+}
+
+.btn-next{
+    left: 37%;
+}
+
+.validator.error input, .validator.error textarea, .validator.error select{
+    border: 2px solid red;
+}
+.validator.success input, .validator.success textarea, .validator.success select{
+    border: 2px solid rgb(0, 255, 26);
+}
+
+
+
 input{
     border-radius: 40px;
+    border: 1px solid   #505050;
     width: 100%;
     height: 40px;
     background-color: #f3f3f3;
-    border: none;
     padding: 15px;
     text-justify: center;
 }
@@ -452,38 +469,40 @@ input:focus{
 }
 #publicar-proyecto{
     padding: 100px;
-
-
-    & textarea{
-        border-radius: 20px;
-        width: 100%;
-        height: 340px;
-        background-color: #f3f3f3;
-        border: none;
-        padding: 15px;
-        font-family: 'Montserrat';
-        font-size: 14px;
-    }
-
-    & select{
-        border-radius: 40px;
-        width: 100%;
-        background-color: #f3f3f3;
-        color: #000000;
-        border: none;
-        padding: 15px;
-
-        & option:hover{
-            background-color: #505050;
-        }
-    }
-
     & #fecha{
         font-family: 'Montserrat';
         text-justify: center;
     }
 
 
+}
+#categoria{
+    border-radius: 40px;
+    width: 100%;
+    background-color: #f3f3f3;
+    color: #000000;
+    padding: 15px;
+
+    & option:hover{
+        background-color: #505050;
+    }
+}
+#categoria:focus{
+    outline: none;
+    border: 2px solid #A188DB;
+}
+#descripcion{
+    border-radius: 20px;
+    width: 100%;
+    height: 340px;
+    background-color: #f3f3f3;
+    padding: 15px;
+    font-family: 'Montserrat';
+    font-size: 14px;
+}
+#descripcion:focus{
+    outline: none;
+    border: 2px solid #A188DB;
 }
 
 .validator{
